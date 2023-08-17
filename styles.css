@@ -6,7 +6,7 @@ body * {
     display: grid;
     grid-template-columns: 1fr 200px; 
     grid-template-rows: 100px 100px 1fr 100px;
-    background-color: bisque;
+    /* background-color: bisque; */
     gap: 8px;
     height: 100vh;
     margin: 50px;
@@ -49,6 +49,23 @@ body * {
 #row-container4 {
     display: flex;
     grid-row: 4/5;
+    grid-column: span 2;
+}
+
+#column-container {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#column-container h1 {
+    font-style: italic;
+}
+
+#column-container ul li {
+    padding-bottom: 20px;
 }
 
 
@@ -63,6 +80,6 @@ body * {
 
 
 
-#grid-container > *{
+/* #grid-container > *{
     border: 3px solid black;
-}
+} */
